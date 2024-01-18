@@ -12,6 +12,7 @@
 
     <nav>
         <a href="#inicio">Inicio</a>
+        <a href="#nuevaOpcion">Nueva opción</a>
         <a href="#consultas">Consultas</a>
         <a href="#contacto">Contacto</a>
     </nav>
@@ -22,18 +23,27 @@
             <p>Explora nuestras consultas y encuentra la información que necesitas.</p>
         </section>
 
+        <section id="nuevOpcion">
+            <h2>Bienvenido a nuestra nueva opción</h2>
+            <p>Explora nuestras consultas y encuentra la información que necesitas.</p>
+        </section>
+
         <section id="consultas">
             <h2>Consultas Populares</h2>
             <ul>
                 <li><a href="#">Consulta 1</a></li>
                 <li><a href="#">Consulta 2</a></li>
                 <li><a href="#">Consulta 3</a></li>
+                <li><a href="#">Consulta 4</a></li>
+                <li><a href="#">Consulta 5</a></li>
+                <li><a href="#">Consulta 6</a></li>
             </ul>
         </section>
     </main>
 
     <footer>
         <p>Web de Ejemplo</p>
+        <p>Texto de muestra en el footer para ver cambios</p>
     </footer>
 
 </body>
@@ -41,8 +51,26 @@
 
 comandos GIT: 
 git init
+git config --global user.name "Your Name" -> para poder cambiar tu nombre de autor
+git config --global user.email you@example.com -> para poder cambiar tu email de autor
 git status -> para ver el estado de los ficheros
 git log -> para poder ver los commits realizados
 git log --oneline -> si añadimos --oneline podremos ver los commits en una sola linea y el codigo de los commits en caso de necesitarlos para un reset --hard.
 git commit -m "" -> el -m es para añadir un comentario
-git checkout "código de commit" -> para volver a otro commit anterior sin perder los cambios hechos en caso de necesitarlos, es más recomendable que el reset 
+git checkout + código de commit -> para volver a otro commit anterior sin perder los cambios hechos en caso de necesitarlos, es más recomendable que el reset
+git checkout + nombre rama -> para cambiar a la nueva rama creada 
+git branch + nombre rama -> para crear una nueva rama
+git merge + nombre rama -> para poder juntar el código que has hecho en otra rama y actualizarlo, este comando se realiza desde donde desees realizar esta unión
+
+
+
+branches -> el principal es la branch MASTER, a partir de aquí para no afectar a la rama principal, 
+creamos una rama nueva, que es un universo paralelo para poder realizar los cambios que desee sin afectar
+al codigo principal y luego cuando el código sea estable, ya podría actualizar el código principal.
+
+HEAD -> en donde te encuentras editando
+
+
+
+
+
