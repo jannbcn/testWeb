@@ -54,7 +54,7 @@ git init
 git config --global user.name "Your Name" -> para poder cambiar tu nombre de autor
 git config --global user.email you@example.com -> para poder cambiar tu email de autor
 git status -> para ver el estado de los ficheros
-git log -> para poder ver los commits realizados
+git log -> paragit  poder ver los commits realizados
 git log --oneline -> si añadimos --oneline podremos ver los commits en una sola linea y el codigo de los commits en caso de necesitarlos para un reset --hard.
 git commit -m "" -> el -m es para añadir un comentario
 git checkout + código de commit -> para volver a otro commit anterior sin perder los cambios hechos en caso de necesitarlos, es más recomendable que el reset
@@ -70,7 +70,24 @@ al codigo principal y luego cuando el código sea estable, ya podría actualizar
 
 HEAD -> en donde te encuentras editando
 
-
+git config --global --unset core.excludesfile
+git config --global --unset user.name
+git config --global --unset user.email
+git config --global --list
+git config --global user.name "Jean Cordova"
+git config --global user.email janncordovall@gmail.com
+git config --global --list
+despues borramos todos los archivos de .ssh en el directorio principal con otra terminal
+ssh-keygen -> generamos una nueva key y no añadimos ningún nombre, sólo le damos enter 3 veces y te indica donde se guarda: Your identification has been saved in /Users/janncordova/.ssh/id_rsa
+Your public key has been saved in /Users/janncordova/.ssh/id_rsa.pub
+ el archivo que nos interesa es el id_rsa.pub
+ luego en github te vas a configuracion de tu repositorio y en el lateral te vas a keys, luego le das a add new key, pones un titulo y añades tu key, le das a can write documents.
+ para poder ver la key, en el otro terminal te vas a .ssh/ y haces vim id_rsa.pub y copias todo lo de dentro.
+ en la terminal de VSCODE continuas con los comandos: git remote add origin https://github.com/jannbcn/testWeb.git
+ git branch -M main
+ git push -u origin main
+ le dices que si y voilá!
+haces un git status para comprobarlo si deseas
 
 
 
